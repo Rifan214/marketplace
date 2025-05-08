@@ -6,6 +6,7 @@
                 <th>No</th>
                 <th>Nama Produk</th>
                 <th>Harga</th>
+                <th>Foto</th>
                 <th>Opsi</th>
             </tr>
         </thead>
@@ -15,6 +16,9 @@
                     <td><?php echo $k + 1; ?></td>
                     <td><?php echo $v["nama_produk"]; ?></td>
                     <td><?php echo $v["harga_produk"]; ?></td>
+                    <td>
+                        <img src="<?php echo $this->config->item("url_produk"). $v["foto_produk"];?>" width="200">
+                    </td>
                     <td>
                         <a href="" class="btn btn-info">Detail</a>
                     </td>

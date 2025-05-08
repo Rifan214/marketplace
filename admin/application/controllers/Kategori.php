@@ -10,7 +10,6 @@ class Kategori extends CI_Controller
 	}
 	function index()
 	{
-
 		$this->load->model("Mkategori");
 		$data["kategori"] = $this->Mkategori->tampil();
 		$this->load->view("header");

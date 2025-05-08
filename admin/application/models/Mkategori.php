@@ -11,7 +11,7 @@ class Mkategori extends CI_Model
 
 	function simpan($inputan)
 	{
-		$config['upload_path'] = './assets/kategori/';
+		$config['upload_path'] = $this->config->item('assets_kategori');
 		$config['allowed_types'] = 'gif|jpg|png';
 		$this->load->library('upload', $config);
 		$ngupload = $this->upload->do_upload('foto_kategori');
@@ -36,7 +36,7 @@ class Mkategori extends CI_Model
 
 	function edit($inputan, $id_kategori)
 	{
-		$config['upload_path'] = './assets/kategori/';
+		$config['upload_path'] = $this->config->item('assets_kategori');
 		$config['allowed_types'] = 'gif|jpg|png';
 		$this->load->library('upload', $config);
 		$ngupload = $this->upload->do_upload('foto_kategori');

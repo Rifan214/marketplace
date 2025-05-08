@@ -8,7 +8,7 @@
         </div>
         <div class="mb-3">
             <label>Foto Lama</label><br>
-            <img src="<?php echo base_url("assets/kategori/" . $kategori["foto_kategori"]) ?>" alt="" width="300">
+            <img src="<?php echo $this->config->item("url_kategori"). $kategori["foto_kategori"] ?>" alt="" width="300">
         </div>
         <div class="mb-3">
             <label for="">Ganti Foto Kategori</label>
