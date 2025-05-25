@@ -17,6 +17,8 @@
     swal("Sukses!", "<?php echo $this->session->flashdata('pesan_sukses'); ?>", "success");
   </script>
 <?php endif; ?>
+<script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+<script>CKEDITOR.replace("editorku")</script>
 </body>
 
 </html>

@@ -24,6 +24,17 @@ class Welcome extends CI_Controller
 			}
 		}
 
-		$this->load->view('login');
+		$this->load->model("Mslider");
+		$data['slider'] = $this->Mslider->tampil();
+		$this->load->model("Mkategori");
+		$data['kategori'] = $this->Mkategori->tampil();
+		$this->load->model("Mproduk");
+		$data['produk'] = $this->Mproduk->tampil_produk_terbaru();
+		$this->load->model("Martikel");
+		$data['artikel'] = $this->Martikel->tampil_artikel_terbaru();
+
+		$this->load->view('header');
+		$this->load->view('welcome', $data);
+		$this->load->view('footer');
 	}
 }

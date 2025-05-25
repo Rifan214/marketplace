@@ -9,6 +9,13 @@ class Mproduk extends CI_Model
 		return $d;
 	}
 
+	function tampil_produk_terbaru(){
+		$this->db->order_by("id_produk", "desc");
+		$q = $this->db->get("produk",4,0)->result_array();
+		$d = $q;
+		return $d;
+	}
+
 	function produk_member($id_member)
 	{
 		$this->db->where("id_member", $id_member);

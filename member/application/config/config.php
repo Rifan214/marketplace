@@ -28,6 +28,10 @@ $config["assets_kategori"] = $_SERVER["DOCUMENT_ROOT"]."/marketplace2928/assets/
 $config["url_kategori"] = "http://localhost/marketplace2928/assets/kategori/";
 $config["assets_produk"] = $_SERVER["DOCUMENT_ROOT"]."/marketplace2928/assets/produk/";
 $config["url_produk"] = "http://localhost/marketplace2928/assets/produk/";
+$config["assets_slider"] = $_SERVER["DOCUMENT_ROOT"]."/marketplace2928/assets/slider/";
+$config["url_slider"] = "http://localhost/marketplace2928/assets/slider/";
+$config["assets_artikel"] = $_SERVER["DOCUMENT_ROOT"]."/marketplace2928/assets/artikel/";
+$config["url_artikel"] = "http://localhost/marketplace2928/assets/artikel/";
 /*
 |--------------------------------------------------------------------------
 | Index File

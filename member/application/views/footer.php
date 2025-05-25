@@ -17,6 +17,11 @@
     swal("Sukses!", "<?php echo $this->session->flashdata('pesan_sukses'); ?>", "success");
   </script>
 <?php endif; ?>
+<?php if ($this->session->flashdata('pesan_gagal')) : ?>
+  <script>
+    swal("Gagal !", "<?php echo $this->session->flashdata('pesan_gagal'); ?>", "error");
+  </script>
+<?php endif; ?>
 </body>
 
 </html>
