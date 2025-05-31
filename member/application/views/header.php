@@ -42,7 +42,7 @@
 									<a class="dropdown-item" href="<?php echo base_url('seller/transaksi') ?>">Penjualan Saya</a>
 								</li>
 								<li>
-									<a class="dropdown-item" href="<?php echo base_url("transaksi") ?>" >Pembelian Saya</a>
+									<a class="dropdown-item" href="<?php echo base_url("transaksi") ?>">Pembelian Saya</a>
 								</li>
 							</ul>
 						</li>
@@ -63,7 +63,9 @@
 						<li class="nav-item">
 							<a href="<?php echo base_url("login") ?>" data-bs-toggle="modal" data-bs-target="#login" class="nav-link">Login</a>
 						</li>
-
+						<li class="nav-item">
+							<a href="<?php echo base_url("register") ?>" class="nav-link">Register</a>
+						</li>
 					</ul>
 				<?php endif; ?>
 			</div>

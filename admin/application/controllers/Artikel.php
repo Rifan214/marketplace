@@ -17,6 +17,10 @@ class Artikel extends CI_Controller
         $this->load->view("footer");
     }
 
+    function detail($id_artikel){
+        
+    }
+
     function tambah()
     {
 
